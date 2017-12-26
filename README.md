@@ -1,9 +1,13 @@
 
-# 微信小程序 socket.io
+## 微信小程序 socket.io 客户端
 
-这是一个基于 socket.io 官方版本修改的，可以在微信小程序上使用的 socket.io 客户端，使用 [engine.io-client-mp](https://github.com/mdluo/engine.io-client-mp) 作为底层传输协议来支持小程序的 [WebSocket API](https://mp.weixin.qq.com/debug/wxadoc/dev/api/network-socket.html).
+这是一个基于 socket.io 官方版本修改的，可以在微信小程序上使用的 socket.io 客户端，方便利用 socket.io 的更多特性，以及与 [egg.js](https://eggjs.org/) 等暂时没有提供原生 WebSocket 实现的服务器程序对接.
 
-大小仅为 12 KB (gziped)，完整保留 [socket.io-client](https://github.com/socketio/socket.io-client) 的 WebSocket 版本的功能，支持二进制格式传输（Binary/ArrayBuffer）、保持长连接（小程序默认约 60s 自动关闭连接）。此外，此库仅修改了引用的 `engine.io-client` 的地址，业务代码无任何修改，所以可以跟官方版本保持同步更新.
+使用 [engine.io-client-mp](https://github.com/mdluo/engine.io-client-mp) 作为底层传输协议来支持小程序的 [WebSocket API](https://mp.weixin.qq.com/debug/wxadoc/dev/api/network-socket.html).
+
+- 大小仅为 12 KB (gziped)，完整保留 [socket.io-client](https://github.com/socketio/socket.io-client) 的 WebSocket 版本的功能
+- 支持二进制格式传输（Binary/ArrayBuffer）、保持长连接（小程序默认约 60s 自动关闭连接）
+- 仅修改了引用的 `engine.io-client` 的地址，业务代码无任何修改，所以可以跟官方版本保持同步更新
 
 ## 使用方法
 
