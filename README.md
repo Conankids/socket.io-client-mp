@@ -36,6 +36,8 @@ socket.on('connect', () => {
 
 初始化时必须设置 transports 为 `['websocket']` ，为了保持跟原生 API 一致，[小程序 API](https://mp.weixin.qq.com/debug/wxadoc/dev/api/network-socket.html#wxconnectsocketobject) 里的 `method` 暂不支持，其他选项参考上面的示例代码.
 
+更多使用方法参考 socket.io 官方文档：https://socket.io/docs/client-api/
+
 ## API
 
 See [API](/docs/API.md)
